@@ -81,6 +81,246 @@ LOCK TABLES `failed_jobs` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `m_admins`
+--
+
+DROP TABLE IF EXISTS `m_admins`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_admins` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_admins`
+--
+
+LOCK TABLES `m_admins` WRITE;
+/*!40000 ALTER TABLE `m_admins` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_admins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_d_admins`
+--
+
+DROP TABLE IF EXISTS `m_d_admins`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_d_admins` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_d_admins`
+--
+
+LOCK TABLES `m_d_admins` WRITE;
+/*!40000 ALTER TABLE `m_d_admins` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_d_admins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_d_mobils`
+--
+
+DROP TABLE IF EXISTS `m_d_mobils`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_d_mobils` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_d_mobils`
+--
+
+LOCK TABLES `m_d_mobils` WRITE;
+/*!40000 ALTER TABLE `m_d_mobils` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_d_mobils` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_d_owners`
+--
+
+DROP TABLE IF EXISTS `m_d_owners`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_d_owners` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_d_owners`
+--
+
+LOCK TABLES `m_d_owners` WRITE;
+/*!40000 ALTER TABLE `m_d_owners` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_d_owners` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_d_transaksis`
+--
+
+DROP TABLE IF EXISTS `m_d_transaksis`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_d_transaksis` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_d_transaksis`
+--
+
+LOCK TABLES `m_d_transaksis` WRITE;
+/*!40000 ALTER TABLE `m_d_transaksis` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_d_transaksis` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_d_users`
+--
+
+DROP TABLE IF EXISTS `m_d_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_d_users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_d_users`
+--
+
+LOCK TABLES `m_d_users` WRITE;
+/*!40000 ALTER TABLE `m_d_users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_d_users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_mobils`
+--
+
+DROP TABLE IF EXISTS `m_mobils`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_mobils` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_mobils`
+--
+
+LOCK TABLES `m_mobils` WRITE;
+/*!40000 ALTER TABLE `m_mobils` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_mobils` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_owners`
+--
+
+DROP TABLE IF EXISTS `m_owners`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_owners` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_owners`
+--
+
+LOCK TABLES `m_owners` WRITE;
+/*!40000 ALTER TABLE `m_owners` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_owners` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_transaksis`
+--
+
+DROP TABLE IF EXISTS `m_transaksis`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_transaksis` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_transaksis`
+--
+
+LOCK TABLES `m_transaksis` WRITE;
+/*!40000 ALTER TABLE `m_transaksis` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_transaksis` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `m_users`
+--
+
+DROP TABLE IF EXISTS `m_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `m_users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_users`
+--
+
+LOCK TABLES `m_users` WRITE;
+/*!40000 ALTER TABLE `m_users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `m_users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -92,7 +332,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +341,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_resets_table',1),(3,'2014_10_12_200000_add_two_factor_columns_to_users_table',1),(4,'2019_08_19_000000_create_failed_jobs_table',1),(5,'2019_12_14_000001_create_personal_access_tokens_table',1),(6,'2021_12_21_081141_create_activity_log_table',1),(7,'2021_12_21_081142_add_event_column_to_activity_log_table',1),(8,'2021_12_21_081143_add_batch_uuid_column_to_activity_log_table',1);
+INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_resets_table',1),(3,'2014_10_12_200000_add_two_factor_columns_to_users_table',1),(4,'2019_08_19_000000_create_failed_jobs_table',1),(5,'2019_12_14_000001_create_personal_access_tokens_table',1),(6,'2021_12_21_081141_create_activity_log_table',1),(7,'2021_12_21_081142_add_event_column_to_activity_log_table',1),(8,'2021_12_21_081143_add_batch_uuid_column_to_activity_log_table',1),(9,'2021_12_22_162609_create_m_admins_table',1),(10,'2021_12_22_162628_create_m_d_admins_table',1),(11,'2021_12_22_162641_create_m_users_table',1),(12,'2021_12_22_162653_create_m_d_users_table',1),(13,'2021_12_22_162707_create_m_owners_table',1),(14,'2021_12_22_162720_create_m_d_owners_table',1),(15,'2021_12_22_162735_create_m_transaksis_table',1),(16,'2021_12_22_162753_create_m_d_transaksis_table',1),(17,'2021_12_22_162808_create_m_mobils_table',1),(18,'2021_12_22_162823_create_m_d_mobils_table',1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,4 +442,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-21 16:01:15
+-- Dump completed on 2021-12-23  0:50:04
