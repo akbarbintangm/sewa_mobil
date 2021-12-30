@@ -14,7 +14,7 @@ class MAdminController extends Controller
      */
     public function index()
     {
-        //
+        return view('master.dashboard');
     }
 
     /**
