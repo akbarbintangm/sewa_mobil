@@ -79,7 +79,7 @@ Jalan-jalan Skuy!
         </div>
     </div>
     <div class="row justify-content-center pt-5 pb-5">
-        <div class="col-md-7 align-self-center" data-aos="fade-left-up">
+        <div class="col-md-7 align-self-center" data-aos="fade-left">
             <h2 class="heading">First heading. <span class="text-muted">It’ll blow your mind.</span></h2>
             <p class="lead">Some great placeholder content for the first here. Imagine some exciting prose here.</p>
         </div>
