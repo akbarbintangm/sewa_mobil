@@ -11,8 +11,8 @@
 @section('content')
 <div class="container">
         <!-- Outer Row -->
-        <div class="row justify-content-center">
-            <div class="col-xl-10 col-lg-12 col-md-9">
+        <div class="row vh-100 justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9 align-self-center">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
@@ -27,20 +27,18 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <input type="email" class="form-control shadow-sm" id="" name="" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                                         </div>
-                                        <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                            Reset Password
-                                        </a>
+                                        <button type="submit" class="btn btn-primary shadow-sm btn-block">
+                                            Login
+                                        </button>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="{{ url('register') }}">Create an Account!</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="login.html">Already have an account? Login!</a>
+                                        <a class="small" href="{{ url('login') }}">Already have an account? Login!</a>
                                     </div>
                                 </div>
                             </div>

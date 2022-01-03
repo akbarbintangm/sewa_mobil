@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/animate/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/waves/dist/waves.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/aos-next/src/scss/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/aos-next/src/sass/aos.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/venobox/dist/venobox.min.css') }}">
     <!-- Admin Mode -->
     <link rel="stylesheet" href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}">
@@ -33,7 +33,7 @@
     <script src="{{ asset('vendor/jquery/plugins/jquery-waypoints/lib/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('vendor/aos-next/src/js/aos.min.js') }}"></script>
     <script src="{{ asset('vendor/isotope/dist/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('vendor/owl-carousel/dist/owl-carousel.min.js') }}"></script>
+    <script src="{{ asset('vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('vendor/venobox/dist/venobox.min.js') }}"></script>
     <script src="{{ asset('vendor/waves/dist/waves.min.js') }}"></script>
     <script src="{{ asset('vendor/counter-up/jquery.counterup.min.js') }}"></script>
@@ -42,9 +42,7 @@
     <script src="{{ asset('vendor/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('vendor/select2/js/select2.full.min.js') }}"></script>
-    <script src="{{ asset('vendor/select2/themes/select2-bootstrap/select2-bootstrap4.min.js') }}"></script>
     <script src="{{ asset('vendor/sweetalert2/sweetalert2.all.min.js') }}"></script>
-    <script src="{{ asset('vendor/sweetalert2/themes/sweetalert2-bootstrap/bootstrap-4.min.js') }}"></script>
     <script src="{{ asset('vendor/pdfobject/pdfobject.min.js') }}"></script>
     <script src="{{ asset('vendor/ckeditor/ckeditor.min.js') }}"></script>
     <script src="{{ asset('lib/js/sb-admin-2.min.js') }}"></script>
