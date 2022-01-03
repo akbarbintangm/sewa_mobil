@@ -27,7 +27,9 @@ $(document).ready(function () {
     });
 
     /* External Plugins */
-
+    // AOS
+    AOS.init();
+    
     // dataTables
     $('#dataTable').DataTable();
 
