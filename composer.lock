@@ -537,16 +537,16 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "c9e208317b0cf679097cf976ffbb0b0eec81d4df"
+                "reference": "47c53bbb260d3c398fba9bfa9683dcf67add2579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/c9e208317b0cf679097cf976ffbb0b0eec81d4df",
-                "reference": "c9e208317b0cf679097cf976ffbb0b0eec81d4df",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/47c53bbb260d3c398fba9bfa9683dcf67add2579",
+                "reference": "47c53bbb260d3c398fba9bfa9683dcf67add2579",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +586,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.2.2"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.2.3"
             },
             "funding": [
                 {
@@ -594,7 +594,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-05T06:05:42+00:00"
+            "time": "2022-01-06T05:35:07+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2978,16 +2978,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "44436f270bb134b4a94670f3d020a85dfa0a3c02"
+                "reference": "1a359d2ccbb89c05f5dffb32711a95f4afc67964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/44436f270bb134b4a94670f3d020a85dfa0a3c02",
-                "reference": "44436f270bb134b4a94670f3d020a85dfa0a3c02",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/1a359d2ccbb89c05f5dffb32711a95f4afc67964",
+                "reference": "1a359d2ccbb89c05f5dffb32711a95f4afc67964",
                 "shasum": ""
             },
             "require": {
@@ -3076,9 +3076,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.20.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.21.0"
             },
-            "time": "2021-11-23T15:23:42+00:00"
+            "time": "2022-01-06T11:10:08+00:00"
         },
         {
             "name": "phpoption/phpoption",
