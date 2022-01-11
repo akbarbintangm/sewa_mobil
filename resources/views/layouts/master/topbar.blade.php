@@ -8,7 +8,7 @@
             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                 aria-label="Search" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-danger" type="button">
                     <i class="fas fa-search fa-sm"></i>
                 </button>
             </div>
@@ -28,7 +28,7 @@
                             placeholder="Search for..." aria-label="Search"
                             aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
+                            <button class="btn btn-danger" type="button">
                                 <i class="fas fa-search fa-sm"></i>
                             </button>
                         </div>
@@ -50,7 +50,7 @@
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="mr-3">
-                        <div class="icon-circle bg-primary">
+                        <div class="icon-circle bg-danger">
                             <i class="fas fa-file-alt text-white"></i>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
             <div class="modal-body"></div>
             <div class="modal-footer">
                 <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
+                <button class="btn btn-sm btn-danger" type="submit">Simpan</button>
             </div>
         </div>
     </div>
@@ -208,7 +208,7 @@
             <div class="modal-body"></div>
             <div class="modal-footer">
                 <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-sm btn-primary" type="submit">Simpan</button>
+                <button class="btn btn-sm btn-danger" type="submit">Simpan</button>
             </div>
         </div>
     </div>
@@ -226,7 +226,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-sm btn-primary" href="login.html">Logout</a>
+                <a class="btn btn-sm btn-danger" href="login.html">Logout</a>
             </div>
         </div>
     </div>
