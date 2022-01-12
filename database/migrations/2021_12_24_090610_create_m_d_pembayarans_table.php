@@ -14,7 +14,10 @@ class CreateMDPembayaransTable extends Migration
     public function up()
     {
         Schema::create('m_d_pembayarans', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_pembayaran');
+            $table->bigInteger('id_m_pembayaran');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

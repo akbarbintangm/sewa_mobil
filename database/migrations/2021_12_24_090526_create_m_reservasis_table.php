@@ -14,7 +14,9 @@ class CreateMReservasisTable extends Migration
     public function up()
     {
         Schema::create('m_reservasis', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_reservasi');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

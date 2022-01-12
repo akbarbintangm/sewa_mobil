@@ -14,7 +14,10 @@ class CreateMSubDistrictsTable extends Migration
     public function up()
     {
         Schema::create('m_sub_districts', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_sub_district');
+            $table->string('name_sub_district');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

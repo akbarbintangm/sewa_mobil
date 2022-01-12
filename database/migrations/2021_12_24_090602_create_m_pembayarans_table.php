@@ -14,7 +14,9 @@ class CreateMPembayaransTable extends Migration
     public function up()
     {
         Schema::create('m_pembayarans', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_pembayaran');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

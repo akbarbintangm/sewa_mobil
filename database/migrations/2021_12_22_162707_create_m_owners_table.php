@@ -14,7 +14,16 @@ class CreateMOwnersTable extends Migration
     public function up()
     {
         Schema::create('m_owners', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_owner');
+            $table->string('name_owner');
+            $table->string('email_owner')->unique();
+            $table->timestamp('email_owner_verified_at')->nullable();
+            $table->string('password_owner');
+            $table->text('profile_owner');
+            $table->bigInteger('role_owner');
+            $table->rememberToken();
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class CreateMDMobilsTable extends Migration
     public function up()
     {
         Schema::create('m_d_mobils', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_mobil');
+            $table->bigInteger('id_m_mobil');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

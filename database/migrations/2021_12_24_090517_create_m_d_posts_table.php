@@ -14,7 +14,10 @@ class CreateMDPostsTable extends Migration
     public function up()
     {
         Schema::create('m_d_posts', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_post');
+            $table->bigInteger('id_m_post');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

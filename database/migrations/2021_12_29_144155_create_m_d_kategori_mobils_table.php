@@ -14,7 +14,10 @@ class CreateMDKategoriMobilsTable extends Migration
     public function up()
     {
         Schema::create('m_d_kategori_mobils', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_kategori_mobil');
+            $table->bigInteger('id_m_kategori_mobil');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

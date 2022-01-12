@@ -14,7 +14,16 @@ class CreateMUsersTable extends Migration
     public function up()
     {
         Schema::create('m_users', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_user');
+            $table->string('name_user');
+            $table->string('email_user')->unique();
+            $table->timestamp('email_user_verified_at')->nullable();
+            $table->string('password_user');
+            $table->text('profile_user');
+            $table->bigInteger('role_user');
+            $table->rememberToken();
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

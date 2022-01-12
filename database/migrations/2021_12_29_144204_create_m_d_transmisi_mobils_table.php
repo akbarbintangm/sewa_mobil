@@ -14,7 +14,10 @@ class CreateMDTransmisiMobilsTable extends Migration
     public function up()
     {
         Schema::create('m_d_transmisi_mobils', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_transmisi_mobil');
+            $table->bigInteger('id_m_transmisi_mobil');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

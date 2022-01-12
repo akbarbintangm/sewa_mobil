@@ -14,7 +14,10 @@ class CreateMDBanksTable extends Migration
     public function up()
     {
         Schema::create('m_d_banks', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_banks');
+            $table->bigInteger('id_m_banks');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

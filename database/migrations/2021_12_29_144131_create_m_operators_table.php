@@ -14,7 +14,16 @@ class CreateMOperatorsTable extends Migration
     public function up()
     {
         Schema::create('m_operators', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_operator');
+            $table->string('name_operator');
+            $table->string('email_operator')->unique();
+            $table->timestamp('email_operator_verified_at')->nullable();
+            $table->string('password_operator');
+            $table->text('profile_operator');
+            $table->bigInteger('role_operator');
+            $table->rememberToken();
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

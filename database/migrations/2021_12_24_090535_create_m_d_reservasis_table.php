@@ -14,7 +14,10 @@ class CreateMDReservasisTable extends Migration
     public function up()
     {
         Schema::create('m_d_reservasis', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_reservasi');
+            $table->bigInteger('id_m_reservasi');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

@@ -14,7 +14,16 @@ class CreateMAdminsTable extends Migration
     public function up()
     {
         Schema::create('m_admins', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_admin');
+            $table->string('name_admin');
+            $table->string('email_admin')->unique();
+            $table->timestamp('email_admin_verified_at')->nullable();
+            $table->string('password_admin');
+            $table->text('profile_admin');
+            $table->bigInteger('role_admin');
+            $table->rememberToken();
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

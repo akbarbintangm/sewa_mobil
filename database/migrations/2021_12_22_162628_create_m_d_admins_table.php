@@ -14,7 +14,10 @@ class CreateMDAdminsTable extends Migration
     public function up()
     {
         Schema::create('m_d_admins', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_admin');
+            $table->bigInteger('id_m_admin');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

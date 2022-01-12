@@ -14,7 +14,10 @@ class CreateMDOwnersTable extends Migration
     public function up()
     {
         Schema::create('m_d_owners', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_owner');
+            $table->bigInteger('id_m_owner');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class CreateMDChattingsTable extends Migration
     public function up()
     {
         Schema::create('m_d_chattings', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_chatting');
+            $table->bigInteger('id_m_chatting');
+            $table->bigInteger('created_by');
+            $table->bigInteger('updated_by');
             $table->timestamps();
         });
     }
