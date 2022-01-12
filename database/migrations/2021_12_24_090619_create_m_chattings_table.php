@@ -15,6 +15,8 @@ class CreateMChattingsTable extends Migration
     {
         Schema::create('m_chattings', function (Blueprint $table) {
             $table->bigIncrements('id_m_chatting');
+            $table->bigInteger('user_one');
+            $table->bigInteger('user_two');
             $table->bigInteger('created_by');
             $table->bigInteger('updated_by');
             $table->timestamps();

@@ -5,7 +5,7 @@ Jalan-jalan Skuy!
 @endsection
 
 @section('content')
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger pt-3 pb-3 shadow">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info pt-3 pb-3 shadow">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@ Jalan-jalan Skuy!
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="shadow-sm btn btn-danger btn-lg" href="#" role="button">Learn more</a>
+            <a class="shadow-sm btn btn-info btn-lg" href="#" role="button">Learn more</a>
         </div>
         <div class="col align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block">
             <img src="{{ asset('lib/img/bmw.jpg')}}" class="img-fluid">
@@ -61,19 +61,19 @@ Jalan-jalan Skuy!
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                    <p><a class="shadow-sm btn btn-danger" href="#">View details »</a></p>
+                    <p><a class="shadow-sm btn btn-info" href="#">View details »</a></p>
                 </div>
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                    <p><a class="shadow-sm btn btn-danger" href="#">View details »</a></p>
+                    <p><a class="shadow-sm btn btn-info" href="#">View details »</a></p>
                 </div>
                 <div class="col-lg-4">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>And lastly this, the third column of representative placeholder content. And lastly this, the third column.</p>
-                    <p><a class="shadow-sm btn btn-danger" href="#">View details »</a></p>
+                    <p><a class="shadow-sm btn btn-info" href="#">View details »</a></p>
                 </div>
             </div>
         </div>
@@ -114,19 +114,19 @@ Jalan-jalan Skuy!
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Humam A A</h2>
                     <p class="font-italic">Hustler</p>
-                    <p><a class="shadow-sm btn btn-danger" href="#">Profile »</a></p>
+                    <p><a class="shadow-sm btn btn-info" href="#">Profile »</a></p>
                 </div>
                 <div class="col-lg-3 text-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Wildan Ricky W</h2>
                     <p class="font-italic">Hipster</p>
-                    <p><a class="shadow-sm btn btn-danger" href="#">Profile »</a></p>
+                    <p><a class="shadow-sm btn btn-info" href="#">Profile »</a></p>
                 </div>
                 <div class="col-lg-3 text-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Akbar Bintang M</h2>
                     <p>Hacker</p>
-                    <p class="font-italic"><a class="shadow-sm btn btn-danger" href="#">Profile »</a></p>
+                    <p class="font-italic"><a class="shadow-sm btn btn-info" href="#">Profile »</a></p>
                 </div>
             </div>
         </div>
