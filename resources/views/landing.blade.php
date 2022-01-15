@@ -5,7 +5,7 @@ Jalan-jalan Skuy!
 @endsection
 
 @section('content')
-<nav class="navbar navbar-expand-lg navbar-dark bg-info pt-3 pb-3 shadow">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info pt-3 pb-3 shadow" >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,33 +43,61 @@ Jalan-jalan Skuy!
 </nav>
 <div class="container">
     <div class="row vh-100 justify-content-center pt-5 pb-5">
-        <div class="col align-self-center">
+        <div class="col align-self-center" data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <h1 class="display-4">Hello, world!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <a class="shadow-sm btn btn-info btn-lg" href="#" role="button">Learn more</a>
         </div>
-        <div class="col align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <div class="col align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block" data-aos="fade-up"
+        data-aos-duration="1250"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <img src="{{ asset('lib/img/bmw.jpg')}}" class="img-fluid">
         </div>
     </div>
     <div class="row justify-content-center pt-5 pb-5">
         <div class="col align-self-center">
             <div class="row text-center">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
                     <p><a class="shadow-sm btn btn-info" href="#">View details »</a></p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
                     <p><a class="shadow-sm btn btn-info" href="#">View details »</a></p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Heading</h2>
                     <p>And lastly this, the third column of representative placeholder content. And lastly this, the third column.</p>
@@ -78,51 +106,118 @@ Jalan-jalan Skuy!
             </div>
         </div>
     </div>
-    <div class="row justify-content-center pt-5 pb-5">
-        <div class="col-md-7 align-self-center" data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center">
-            <h2 class="heading">First heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+    <div class="row vh-100 justify-content-center pt-5 pb-5">
+        <div class="col-md-7 align-self-center"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+            <h2 class="heading">First heading. <span class="text-muted">Book Now.</span></h2>
             <p class="lead">Some great placeholder content for the first here. Imagine some exciting prose here.</p>
         </div>
-        <div class="col-md-5 align-self-center" data-aos="fade-right-up">
+        <div class="col-md-5 align-self-center"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
         </div>
     </div>
-    <div class="row justify-content-center pt-5 pb-5">
-        <div class="col-md-7 order-md-2 align-self-center">
+    <div class="row vh-100 justify-content-center pt-5 pb-5">
+        <div class="col-md-7 order-md-2 align-self-center"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <h2 class="heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
             <p class="lead">Another  Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
         </div>
-        <div class="col-md-5 order-md-1 align-self-center">
+        <div class="col-md-5 order-md-1 align-self-center" data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
         </div>
     </div>
-    <div class="row justify-content-center pt-5 pb-5">
-        <div class="col align-self-center">
+    <div class="row vh-100 justify-content-center pt-5 pb-5">
+        <div class="col-md-7 align-self-center"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+            <h2 class="heading">Book Now. <span class="text-muted">Make a Sense.</span></h2>
+            <p class="lead">Some great placeholder content for the first here. Imagine some exciting prose here.</p>
+        </div>
+        <div class="col-md-5 align-self-center"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+            <a class="shadow-sm btn btn-info btn-lg btn-block" href="#" role="button">Book Now</a>
+        </div>
+    </div>
+    <div class="row vh-100 justify-content-center pt-5 pb-5">
+        <div class="col align-self-center" data-aos="fade-up"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
             <div class="row text-left">
                 <div class="col-lg-3 text-center align-self-center">
                     <h2>Our Team</h2>
                     <p>Meet Our Team.</p>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 text-center" data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Humam A A</h2>
                     <p class="font-italic">Hustler</p>
                     <p><a class="shadow-sm btn btn-info" href="#">Profile »</a></p>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 text-center" data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Wildan Ricky W</h2>
                     <p class="font-italic">Hipster</p>
                     <p><a class="shadow-sm btn btn-info" href="#">Profile »</a></p>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 text-center" data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                     <svg class="bd-placeholder-img rounded-circle pb-2" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
                     <h2>Akbar Bintang M</h2>
                     <p>Hacker</p>

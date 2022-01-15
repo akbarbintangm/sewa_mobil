@@ -11,29 +11,29 @@
 @section('content')
 <div class="container">
     <div class="row vh-100 justify-content-center">
-        <div class="col-lg align-self-center">
+        <div class="col-lg-7 align-self-center">
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
-                        <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                        <div class="col-lg-7">
+                        {{-- <div class="col-lg d-none d-lg-block bg-register-image"></div> --}}
+                        <div class="col-lg">
                             <div class="p-5">
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Daftar Akun</h1>
                                 </div>
-                                <form class="user" enctype="multipart/form-data" action="">
+                                <form action="{{route('auth.do.register')}}" class="user" enctype="multipart/form-data" >
                                     @csrf
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control shadow-sm" id="" name="" placeholder="Nama Depan">
+                                            <input type="text" class="form-control shadow-sm" id="" name="" value="{{ old('') }}" placeholder="Nama Depan">
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control shadow-sm" id="" name="" placeholder="Nama Belakang">
+                                            <input type="text" class="form-control shadow-sm" id="" name="" value="{{ old('') }}" placeholder="Nama Belakang">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control shadow-sm" id="" name="" placeholder="Email">
+                                        <input type="email" class="form-control shadow-sm" id="" name="" value="{{ old('') }}" placeholder="Email">
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
@@ -47,12 +47,20 @@
                                         Buat Akun Baru
                                     </button>
                                     <hr>
-                                    <a href="" class="shadow-sm btn btn-google btn-block disabled">
-                                        <i class="fab fa-google fa-fw"></i> Register with Google
-                                    </a>
-                                    <a href="" class="shadow-sm btn btn-facebook btn-block disabled">
-                                        <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                    </a>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <a href="" class="shadow-sm btn btn-google btn-block disabled">
+                                                <i class="fab fa-google fa-fw"></i> Register with Google
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="" class="shadow-sm btn btn-facebook btn-block disabled">
+                                                <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+
+
                                 </form>
                                 <hr>
                                 <div class="text-center">

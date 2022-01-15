@@ -102,7 +102,7 @@ CREATE TABLE `m_admins` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_m_admin`),
   UNIQUE KEY `m_admins_email_admin_unique` (`email_admin`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -111,6 +111,7 @@ CREATE TABLE `m_admins` (
 
 LOCK TABLES `m_admins` WRITE;
 /*!40000 ALTER TABLE `m_admins` DISABLE KEYS */;
+INSERT INTO `m_admins` VALUES (1,'Admin','admin@admin.com',NULL,'adminadmin','admin.jpg',1,NULL,1,1,NULL,NULL);
 /*!40000 ALTER TABLE `m_admins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,6 +203,8 @@ DROP TABLE IF EXISTS `m_chattings`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `m_chattings` (
   `id_m_chatting` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `user_one` bigint(20) NOT NULL,
+  `user_two` bigint(20) NOT NULL,
   `created_by` bigint(20) NOT NULL,
   `updated_by` bigint(20) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -1221,4 +1224,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-13  1:10:27
+-- Dump completed on 2022-01-15 22:14:58

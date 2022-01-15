@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/animate/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/waves/dist/waves.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/aos-next/src/sass/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/aos-next/dist/aos.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/venobox/dist/venobox.min.css') }}">
     <!-- Admin Mode -->
     <link rel="stylesheet" href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}">
@@ -31,7 +31,7 @@
     <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
     <script src="{{ asset('vendor/jquery/plugins/jquery-easing/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('vendor/jquery/plugins/jquery-waypoints/lib/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('vendor/aos-next/src/js/aos.min.js') }}"></script>
+    <script src="{{ asset('vendor/aos-next/dist/aos.min.js') }}"></script>
     <script src="{{ asset('vendor/isotope/dist/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('vendor/owl-carousel/dist/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('vendor/venobox/dist/venobox.min.js') }}"></script>

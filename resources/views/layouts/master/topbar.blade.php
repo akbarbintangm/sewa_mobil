@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+    <button id="sidebarToggleTop" class="shadow-sm btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
     </button>
     <form
@@ -8,7 +8,7 @@
             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                 aria-label="Search" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-info" type="button">
+                <button class="shadow-sm btn btn-info" type="button">
                     <i class="fas fa-search fa-sm"></i>
                 </button>
             </div>
@@ -28,7 +28,7 @@
                             placeholder="Search for..." aria-label="Search"
                             aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-info" type="button">
+                            <button class="shadow-sm btn btn-info" type="button">
                                 <i class="fas fa-search fa-sm"></i>
                             </button>
                         </div>
@@ -163,7 +163,7 @@
                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                     Settings
                 </a>
-                <a class="dropdown-item" href="{{ url('akun/riwayat') }}">
+                <a class="dropdown-item" href="{{ url('admin/akun/riwayat') }}">
                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                     Activity Log
                 </a>
@@ -189,8 +189,8 @@
             </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
-                <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-sm btn-info" type="submit">Simpan</button>
+                <button class="shadow-sm btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <button class="shadow-sm btn btn-sm btn-info" type="submit">Simpan</button>
             </div>
         </div>
     </div>
@@ -207,8 +207,8 @@
             </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
-                <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-sm btn-info" type="submit">Simpan</button>
+                <button class="shadow-sm btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <button class="shadow-sm btn btn-sm btn-info" type="submit">Simpan</button>
             </div>
         </div>
     </div>
@@ -225,8 +225,8 @@
             </div>
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
-                <button class="btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-sm btn-info" href="login.html">Logout</a>
+                <button class="shadow-sm btn btn-sm btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="shadow-sm btn btn-sm btn-info" href="login.html">Logout</a>
             </div>
         </div>
     </div>

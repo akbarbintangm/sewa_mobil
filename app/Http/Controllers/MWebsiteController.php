@@ -2,8 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\CustomCheck;
+use App\Helpers\Message;
 use App\Models\MWebsite;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
+// use Laravel\Socialite\Facades\Socialite;
 
 class MWebsiteController extends Controller
 {
@@ -12,9 +19,85 @@ class MWebsiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function doLogin()
+    {
+        $request->validate([
+            'emailUser' => 'required',
+            'passwordUser' => 'required',
+        ], Message::error());
+
+        /* $checkUsername = CustomCheck::Username($request->username_admin);
+
+        if (!$checkUsername->status) {
+            return response((array)$checkUsername, 422);
+        }
+
+        $user = MWebsite::whereHas('student', function($student) use($request) {
+            $student->where('npm', $request->npm);
+        })->first();
+
+        if (!$user) {
+            return response([
+                'status' => false,
+                'message' => 'User Tidak ditemukan'
+            ], 404);
+        }
+
+        if (!Hash::check($request->password, $user->password)) {
+            $message = 'Password Salah';
+            if ($user->role->level == 1) {
+                $message = 'User Tidak ditemukan';
+            }
+
+            return response([
+                'status' => false,
+                'message' => $message
+            ], 404);
+        } */
+
+        Auth::login($request->rememberMe);
+
+        return [
+            'status' => true,
+            'message' => 'Login Berhasil'
+        ];
+    }
+
+    public function register()
+    {
+        return view('auth.register');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('auth.login');
+    }
+
     public function index()
     {
-        //
+        return view('master.dashboard');
+    }
+
+    public function account()
+    {
+        return view('master.account');
+    }
+
+    public function history()
+    {
+        return view('master.history');
+    }
+
+    public function setting()
+    {
+        return view('master.setting');
     }
 
     /**

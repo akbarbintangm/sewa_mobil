@@ -25,26 +25,36 @@ $(document).ready(function () {
         target: '#mainNav',
         offset: 75
     });
+});
 
+$(document).ready(function () {
     /* External Plugins */
-    // AOS
-    AOS.init();
-    
-    // dataTables
-    $('#dataTable').DataTable();
-
-    //counterup
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
     // Waves
     Waves.init();
     Waves.attach('.btn', ['waves-float']);
     Waves.attach('.img-fluid', ['waves-float']);
     Waves.attach('.toast', ['waves-float']);
+});
 
+$(document).ready(function () {
+    // AOS
+    AOS.init();
+});
+
+$(document).ready(function () {
+    // dataTables
+    $('#dataTable').DataTable();
+});
+
+$(document).ready(function () {
+    //counterup
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
+
+$(document).ready(function () {
     // Toasts
     if($('.toast')) {
         $('.toast').toast('show');
@@ -52,7 +62,9 @@ $(document).ready(function () {
     else {
         $('.toast').toast('hide');
     }
+});
 
+$(document).ready(function () {
     // Toast Sweetalert
     const Toast = Swal.mixin({
         toast: true,

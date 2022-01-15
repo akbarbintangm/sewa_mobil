@@ -12,31 +12,41 @@ bg-primary
 <div class="container">
 	<!-- Outer Row -->
 	<div class="row vh-100 justify-content-center">
-		<div class="col-xl-10 col-lg-12 col-md-9 align-self-center">
+		<div class="col-xl-5 col-lg-5 col-md-3 align-self-center">
 			<div class="card o-hidden border-0 shadow-lg my-5">
 				<div class="card-body p-0">
 					<!-- Nested Row within Card Body -->
 					<div class="row">
-						<div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-						<div class="col-lg-6">
+						{{-- <div class="col-lg d-none d-lg-block bg-login-image"></div> --}}
+						<div class="col-lg">
 							<div class="p-5">
 								<div class="text-center">
 									<h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
 								</div>
-								<form class="user">
-									<div class="form-group">
-										<input type="email" class="form-control shadow-sm" id="" name="" aria-describedby="emailHelp"
+								<form action="{{route('auth.do.login')}}" class="user" method="post" enctype="multipart/form-data">
+									@csrf
+                                    <div class="form-group">
+										<input type="email" class="form-control shadow-sm" id="emailUser" name="emailUser" value="{{ old('emailUser') }}" aria-describedby="emailHelp"
 										placeholder="Masukkan Username atau Email">
 									</div>
 									<div class="form-group">
-										<input type="password" class="form-control shadow-sm" id="" name="" placeholder="Masukkan Password">
+										<input type="password" class="form-control shadow-sm" id="passwordUser" name="passwordUser" value="{{ old('passwordUser') }}" placeholder="Masukkan Password">
 									</div>
 									<div class="form-group">
 										<div class="custom-control custom-checkbox small">
-											<input type="checkbox" class="custom-control-input" id="customCheck">
-											<label class="custom-control-label" for="customCheck">Ingat Saya</label>
+											<input type="checkbox" class="custom-control-input" id="rememberMe" name="rememberMe">
+											<label class="custom-control-label" for="rememberMe">Ingat Saya</label>
 										</div>
 									</div>
+                                    @if (Session::get("error"))
+                                        <div class="alert alert-danger alert-dismissable shadow-sm">
+                                            <i class="fa fa-warning"></i>
+                                            {{Session::get("error")}}
+                                            <button type="button" class="close" style="margin-top:-5px;" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    @endif
 									<button type="submit" class="btn btn-primary shadow-sm btn-block">
 										Login
 									</button>

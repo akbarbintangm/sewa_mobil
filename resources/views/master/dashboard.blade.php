@@ -7,7 +7,11 @@ Dashboard
 @section('statusNavItemDashboard')
 active
 @endsection
-@section('statusNavItemPelaporan')
+@section('statusNavItemTransaksi')
+@endsection
+@section('statusNavItemBooking')
+@endsection
+@section('statusNavItemReservasi')
 @endsection
 @section('statusNavItemCar')
 @endsection
@@ -17,6 +21,16 @@ active
 @endsection
 @section('statusNavItemUser')
 @endsection
+@section('statusNavItemAdministrative')
+@endsection
+@section('statusNavItemChatting')
+@endsection
+@section('statusNavItemPembayaran')
+@endsection
+@section('statusNavItemBank')
+@endsection
+@section('statusNavItemPost')
+@endsection
 @section('statusNavItemAccount')
 @endsection
 @section('statusNavItemWebsite')
@@ -24,7 +38,13 @@ active
 
 @section('collapsedNavDashboard')
 @endsection
-@section('collapsedNavPelaporan')
+@section('collapsedNavTransaksi')
+nav-link collapsed
+@endsection
+@section('collapsedNavBooking')
+nav-link collapsed
+@endsection
+@section('collapsedNavReservasi')
 nav-link collapsed
 @endsection
 @section('collapsedNavCar')
@@ -39,6 +59,21 @@ nav-link collapsed
 @section('collapsedNavUser')
 nav-link collapsed
 @endsection
+@section('collapsedNavAdministrative')
+nav-link collapsed
+@endsection
+@section('collapsedNavChatting')
+nav-link collapsed
+@endsection
+@section('collapsedNavPembayaran')
+nav-link collapsed
+@endsection
+@section('collapsedNavBank')
+nav-link collapsed
+@endsection
+@section('collapsedNavPost')
+nav-link collapsed
+@endsection
 @section('collapsedNavAccount')
 nav-link collapsed
 @endsection
@@ -47,7 +82,13 @@ nav-link collapsed
 
 @section('ariaExpanedNavDashboard')
 @endsection
-@section('ariaExpanedNavPelaporan')
+@section('ariaExpanedNavTransaksi')
+true
+@endsection
+@section('ariaExpanedNavBooking')
+true
+@endsection
+@section('ariaExpanedNavReservasi')
 true
 @endsection
 @section('ariaExpanedNavCar')
@@ -62,6 +103,21 @@ true
 @section('ariaExpanedNavUser')
 true
 @endsection
+@section('ariaExpandedAdministrative')
+true
+@endsection
+@section('ariaExpandedChatting')
+true
+@endsection
+@section('ariaExpandedPembayaran')
+true
+@endsection
+@section('ariaExpandedBank')
+true
+@endsection
+@section('ariaExpandedPost')
+true
+@endsection
 @section('ariaExpanedNavAccount')
 true
 @endsection
@@ -70,7 +126,11 @@ true
 
 @section('collapseShowDashboard')
 @endsection
-@section('collapseShowPelaporan')
+@section('collapseShowTransaksi')
+@endsection
+@section('collapseShowBooking')
+@endsection
+@section('collapseShowReservasi')
 @endsection
 @section('collapseShowCar')
 @endsection
@@ -80,6 +140,16 @@ true
 @endsection
 @section('collapseShowUser')
 @endsection
+@section('collapseShowAdministrative')
+@endsection
+@section('collapseShowChatting')
+@endsection
+@section('collapseShowPembayaran')
+@endsection
+@section('collapseShowBank')
+@endsection
+@section('collapseShowPost')
+@endsection
 @section('collapseShowAccount')
 @endsection
 @section('collapseShowWebsite')
@@ -87,7 +157,11 @@ true
 
 @section('collapseItemActiveDashboard')
 @endsection
-@section('collapseItemActivePelaporan')
+@section('collapseItemActiveTransaksi')
+@endsection
+@section('collapseItemActiveBooking')
+@endsection
+@section('collapseItemActiveReservasi')
 @endsection
 @section('collapseItemActiveCar')
 @endsection
@@ -97,22 +171,58 @@ true
 @endsection
 @section('collapseItemActiveUser')
 @endsection
+@section('collapseItemActiveAdministrative')
+@endsection
+@section('collapseItemChatting')
+@endsection
+@section('collapseItemPembayaran')
+@endsection
+@section('collapseItemBank')
+@endsection
+@section('collapseItemPost')
+@endsection
 @section('collapseItemActiveAccount')
 @endsection
 @section('collapseItemActiveWebsite')
 @endsection
 
-@section('collapseItemActivePelaporanPDF')
+@section('collapseItemActiveTransaksiData')
 @endsection
-@section('collapseItemActivePelaporanXLSX')
+@section('collapseItemActiveTransaksiPDF')
 @endsection
-@section('collapseItemActivePelaporanTXT')
+@section('collapseItemActiveTransaksiXLSX')
 @endsection
-@section('collapseItemActivePelaporanSQL')
+@section('collapseItemActiveTransaksiTXT')
+@endsection
+@section('collapseItemActiveTransaksiSQL')
+@endsection
+@section('collapseItemActiveBookingData')
+@endsection
+@section('collapseItemActiveBookingPDF')
+@endsection
+@section('collapseItemActiveBookingXLSX')
+@endsection
+@section('collapseItemActiveBookingTXT')
+@endsection
+@section('collapseItemActiveBookingSQL')
+@endsection
+@section('collapseItemActiveReservasiData')
+@endsection
+@section('collapseItemActiveReservasiPDF')
+@endsection
+@section('collapseItemActiveReservasiXLSX')
+@endsection
+@section('collapseItemActiveReservasiTXT')
+@endsection
+@section('collapseItemActiveReservasiSQL')
 @endsection
 @section('collapseItemActiveCarData')
 @endsection
-@section('collapseItemActiveCarDetail')
+@section('collapseItemActiveCarTransmission')
+@endsection
+@section('collapseItemActiveCarBrand')
+@endsection
+@section('collapseItemActiveCarCategory')
 @endsection
 @section('collapseItemActiveAdminData')
 @endsection
@@ -125,6 +235,24 @@ true
 @section('collapseItemActiveUserData')
 @endsection
 @section('collapseItemActiveUserDetail')
+@endsection
+@section('collapseItemActiveAdministrativeCountry')
+@endsection
+@section('collapseItemActiveAdministrativeProvince')
+@endsection
+@section('collapseItemActiveAdministrativeCity')
+@endsection
+@section('collapseItemActiveAdministrativeDistrict')
+@endsection
+@section('collapseItemActiveAdministrativeSubDistrict')
+@endsection
+@section('collapseItemActiveChattingData')
+@endsection
+@section('collapseItemActivePembayaranData')
+@endsection
+@section('collapseItemActiveBankData')
+@endsection
+@section('collapseItemActivePostData')
 @endsection
 @section('collapseItemActiveAccountData')
 @endsection
